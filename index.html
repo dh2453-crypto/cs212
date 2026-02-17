@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Portfolio Layout</title>
+
+<style>
+/* ====== RESET ====== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* ====== PAGE GRID LAYOUT ====== */
+body {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 80px 60px 1fr 60px;
+  grid-template-areas:
+    "header"
+    "nav"
+    "main"
+    "footer";
+  height: 100vh;
+}
+
+/* ====== HEADER ====== */
+header {
+  grid-area: header;
+  background: #222;
+  color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ====== TOP NAVIGATION (FLEXBOX ROW) ====== */
+nav {
+  grid-area: nav;
+  background: #f4f4f4;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+nav a:hover {
+  background: #ddd;
+}
+
+/* ====== MAIN CONTAINER ====== */
+main {
+  grid-area: main;
+  padding: 20px;
+  overflow-y: auto;
+
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+section {
+  flex-grow: 1;
+}
+
+/* ====== SKILLS GRID ====== */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 15px;
+}
+
+.skill {
+  background: #e3f2fd;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.skill.featured {
+  grid-column: span 2;
+  grid-row: span 2;
+  background: #90caf9;
+}
+
+/* ====== PROJECTS GRID ====== */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.project {
+  background: #e8f5e9;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.project.featured {
+  grid-column: span 2;
+}
+
+/* ====== FOOTER ====== */
+footer {
+  grid-area: footer;
+  background: #222;
+  color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>My Portfolio</h1>
+</header>
+
+<!-- TOP NAV -->
+<nav>
+  <a href="#summary">Summary</a>
+  <a href="#education">Education</a>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Projects</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<main>
+
+<section id="summary">
+  <h2>Summary</h2>
+  <p>My name is Don Hernandez. I am currently working on my bachelors in Cybersecurity and the plan is to graduate in 2028. I currently work at Walmart as a Team Lead leading the backroom which is the backbone of the store making sure the store will run smoothly the next day. Some hobbies of mine are cars and playing video games.</p>
+</section>
+
+<section id="education">
+  <h2>Education</h2>
+  <p>Associate of Arts; Arizona Western College</p>
+  <p>Associate of Cyber Crimonology; Arizona Western College</p>
+  <p>Associate of Administration of Justice Studies; Arizona Western College</p>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="skills-grid">
+    <div class="skill featured">C++</div>
+    <div class="skill">HTML</div>
+    <div class="skill">C Programming</div>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="projects-grid">
+    <div class="project featured">Portfolio Website</div>
+    <div class="project">Wiki Page using HTML</div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Email: dh2453@nau.edu</p>
+  <p>Phone: 713-818-0042</p>
+</section>
+
+</main>
+
+<footer>
+  <p>© 2026 My Portfolio</p>
+</footer>
+
+</body>
+</html>
