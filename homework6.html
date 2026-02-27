@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Don Hernandez | Portfolio</title>
+
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
+
+<style>
+    body {
+        font-family: 'Times New Roman', sans-serif;
+    }
+
+    header {
+        font-family: 'Times New Roman', sans-serif;
+    }
+
+    /* Custom gradient override */
+    .custom-gradient {
+        background: linear-gradient(135deg, #1e3c72, #2a5298);
+        color: white;
+    }
+
+    .footer-gradient {
+        background: linear-gradient(135deg, #2a5298, #1e3c72);
+        color: white;
+    }
+
+    /* Hover effects */
+    .card:hover {
+        transform: scale(1.03);
+        transition: 0.3s ease-in-out;
+    }
+
+    .nav-link:hover {
+        text-decoration: underline;
+    }
+</style>
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+<header class="custom-gradient text-center py-5">
+    <div class="container">
+        <h1 class="display-4">Don Hernandez</h1>
+        <p class="lead">Computer Science Student</p>
+        <a href="Resume.pdf" class="btn btn-light btn-lg mt-3" download>
+    Download Resume
+</a>
+    </div>
+</header>
+
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">Portfolio</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navMenu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- ================= MAIN CONTENT ================= -->
+<main class="container my-5">
+
+    <!-- Skills Section -->
+    <section id="skills" class="mb-5">
+        <h2 class="text-center mb-4">Skills</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card shadow">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">C++</h5>
+                        <p class="card-text">Object-Oriented Programming, Data Structures</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card shadow">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Web Development</h5>
+                        <p class="card-text">HTML, CSS, Bootstrap, JavaScript</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card shadow">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Linux</h5>
+                        <p class="card-text">Shell scripting, Git, System Tools</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="mb-5">
+        <h2 class="text-center mb-4">Projects</h2>
+        <div class="row g-4 justify-content-center">
+
+            <div class="col-lg-6">
+                <div class="card shadow">
+                    <div class="card-body">
+                        <h5 class="card-title">Portfolio Website</h5>
+                        <p class="card-text">Responsive personal website built with HTML.</p>
+                        <a href="#" class="btn btn-primary">View Project</a>
+                    </div>
+                </div>
+            </div>
+
+            </section>
+
+    <!-- Education Section -->
+    <section id="education" class="mb-5">
+        <h2 class="text-center mb-4">Education</h2>
+        <div class="table-responsive">
+            <table class="table table-striped table-hover">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Institution</th>
+                        <th>Degree</th>
+                        <th>Year</th>
+                    </tr>
+                </thead>
+		<tbody>
+                    <tr>
+                        <td>Arizona Western College</td>
+                        <td>Cyber Crimonology</td>
+                        <td>2025</td>
+                    </tr>
+                </tbody>
+		<tbody>
+                    <tr>
+                        <td>Arizona Western College</td>
+                        <td>Administration of Justice Studies</td>
+                        <td>2025</td>
+                    </tr>
+                </tbody>
+		<tbody>
+                    <tr>
+                        <td>Arizona Western College</td>
+                        <td>Associate of Arts</td>
+                        <td>2025</td>
+                    </tr>
+                </tbody>
+
+
+
+            </table>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="mb-5">
+        <h2 class="text-center mb-4">Experience</h2>
+        <div class="table-responsive">
+            <table class="table table-bordered table-hover">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Institution</th>
+                        <th>Class</th>
+                        <th>Years</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Northern Arizona University</td>
+                        <td>Web Programming</td>
+                        <td>2025</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer-gradient text-center py-4">
+    <div class="container">
+        <p class="mb-0">&copy; 2026 Don Hernandez | All Rights Reserved</p>
+    </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
